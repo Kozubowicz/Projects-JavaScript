@@ -1,0 +1,65 @@
+@use "./../utils/mixins.scss" as *;
+
+.main__exploreOnline {
+  margin-bottom: 100px;
+
+  @include grid();
+  grid-template-rows: auto;
+
+  &--title {
+    color: #{$black};
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    margin-bottom: 8px;
+  }
+
+  &--four {
+    margin-bottom: 10px;
+    grid-column: 1 / 3;
+
+    @include forTablet () {
+      grid-column: 2 / 6;
+    }
+
+    @include forDesktop () {
+      grid-column: span 4;
+    }
+
+    &-picture {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      padding-bottom: 10px;
+      align-self: center;
+
+      @include forTablet () {
+        height: 450px;
+      }
+      @include forDesktop () {
+        height: 310px;
+      }
+    }
+
+    &-title {
+      color: #{$red};
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      margin-bottom: 4px;
+    }
+
+    &-label {
+      color: #{$black};
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+}

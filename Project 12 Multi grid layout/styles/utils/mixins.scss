@@ -1,0 +1,34 @@
+@mixin forDesktop () {
+  @media (min-width: 1080px) {
+    @content;
+  }
+}
+@mixin forTablet () {
+  @media (min-width: 700px) and (max-width: 1079px) {
+    @content;
+  }
+}
+
+@mixin grid() {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 1fr 1fr;
+  align-content: start;
+  gap: 24px;
+
+  @include forTablet () {
+    grid-template-columns: repeat(6, 96px);
+  }
+
+  @include forDesktop () {
+    grid-template-columns: repeat(12, 63px);
+  }
+}
+
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}

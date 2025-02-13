@@ -1,0 +1,27 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "./variables";
+@import "./utils/reset";
+@import "./blocks/header";
+@import "./blocks/menu";
+@import "./blocks/main";
+@import "./blocks/about";
+@import "./blocks/nowOnView";
+@import "./blocks/exploreOnline";
+@import "./blocks/contact";
+@import "./blocks/form";
+@import "./blocks/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #{$white};
+  font-family: "Cinzel", "Roboto", sans-serif;
+}
+
+.main {
+  margin: 100px 20px 0;
+}

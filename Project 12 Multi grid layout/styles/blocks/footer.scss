@@ -1,0 +1,11 @@
+.footer {
+  &__img {
+    background-image: url("../images/photos/footer.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 30vh;
+    width: 100%;
+  }
+}
