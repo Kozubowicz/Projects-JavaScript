@@ -1,0 +1,1 @@
+2048 is a simple yet addictive puzzle game where you slide numbered tiles on a grid, merging identical tiles to create higher numbers. The goal is to reach the 2048 tile, but you can continue playing to achieve even higher numbers.
